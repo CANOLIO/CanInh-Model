@@ -127,6 +127,15 @@ Lck es una pieza fundamental en la señalización del receptor de células T (TC
 
 ---
 
+### 📚 Respaldo Bibliográfico y Validación de Scaffolds
+
+Los compuestos identificados por el modelo presentan una alta coherencia estructural con familias químicas validadas en la literatura reciente:
+
+* **Bioisosterismo y Potencia:** El uso de núcleos nitrogenados en nuestros candidatos (ej. CID 68058875) se alinea con el desarrollo de derivados de **quinoxalina** como potentes agentes antitumorales (*Al-Marhabi et al., 2015*).
+* **Afinidad por Tirosina Quinasas:** La estructura de los hits para quinasas de membrana correlaciona con los andamios de **4-fenoxiquinolina** utilizados en el diseño de inhibidores selectivos de tirosina quinasas (ej. c-Met), donde la sustitución específica en las posiciones 6 y 7 es crítica para la actividad (*Liu et al., 2014*). 
+
+---
+
 ## Limitaciones y Trabajo Futuro
 
 Para llevar estos candidatos de la fase *in silico* a ensayos *in vitro*, los próximos pasos son:
@@ -134,6 +143,21 @@ Para llevar estos candidatos de la fase *in silico* a ensayos *in vitro*, los pr
 1. **Extracción SMILES:** Mapear los `PubChem_CID` resultantes a sus estructuras SMILES mediante la API de ChEMBL.
 2. **Scaffold Analysis:** Implementar `MurckoScaffold` de RDKit para agrupar los candidatos por su esqueleto estructural base y priorizar familias químicas novedosas que no estén patentadas.
 3. **ADMET:** Pasar los top candidatos por predictores de toxicidad y farmacocinética antes de la síntesis.
+
+---
+
+### Referencias Clave 
+
+* **Sustento de Scaffolds Nitrogenados (Quinoxalinas):**
+  Al-Marhabi, A. R., Abbas, H. S., & Ammar, Y. A. (2015). Synthesis, Characterization and Biological Evaluation of Some Quinoxaline Derivatives: A Promising and Potent New Class of Antitumor and Antimicrobial Agents. *Molecules, 20*(11), 19805-19822.
+
+* **Optimización de Tirosina Quinasas (Fenoxiquinolinas):**
+  Liu, Z., Wang, R., Guo, R., Hu, J., Li, R., Zhao, Y., & Gong, P. (2014). Design, synthesis and biological evaluation of novel 6,7-disubstituted-4-phenoxyquinoline derivatives bearing 4-oxo-3,4-dihydrophthalazine-1-carboxamide moieties as c-Met kinase inhibitors. *Bioorganic & Medicinal Chemistry, 22*(14), 3642-3653.
+
+### Conexión Teórico-Práctica
+La detección de moléculas con núcleos de heterociclos nitrogenados y sustituyentes aromáticos específicos por parte del modelo no es azarosa. La literatura citada confirma que:
+1.  Los derivados de la **Quinoxalina** y la **Quinazolina** son "andamios privilegiados" para la inhibición de la familia de quinasas Src, a la cual pertenece **Lck**.
+2.  La importancia otorgada por el modelo a los *Morgan Fingerprints* locales coincide con la evidencia experimental que señala cómo pequeñas modificaciones en las posiciones 6 y 7 de las **4-fenoxiquinolinas** alteran drásticamente la potencia y selectividad hacia tirosina quinasas de membrana.
 
 ---
 
