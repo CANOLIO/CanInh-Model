@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# Entornos de Python y dependencias
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+venv/
+env/
+.conda/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Datos del proyecto (¡NUNCA SUBIR DATASETS A GITHUB!)
+*.h5
+*.csv
+data/
+dataset_audit_report.txt
+
+# Modelos guardados (Pesados)
+results/models/*.pkl
